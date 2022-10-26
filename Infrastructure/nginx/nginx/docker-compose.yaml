@@ -1,0 +1,21 @@
+# version: '3.1'
+
+# services:
+#   nignx:
+#     build: .
+#     ports:
+#       - 8080:80
+#     volumes:
+#       - ./build:/app/build
+
+# volumes:
+#   ui-build:
+
+
+version: '3.1'
+
+services:
+  nignx:
+    build: ./
+    ports:
+      - 80:80

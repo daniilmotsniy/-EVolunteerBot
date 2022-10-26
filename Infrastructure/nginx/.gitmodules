@@ -1,0 +1,9 @@
+[submodule "HelpServiceBE"]
+	path = HelpServiceBE
+	url = git@github.com:daniilmotsniy/HelpServiceBE.git
+[submodule "KharkivBayraktarFE"]
+	path = KharkivBayraktarFE
+	url = git@github.com:daniilmotsniy/KharkivBayraktarFE.git
+[submodule "HelpService"]
+	path = HelpService
+	url = git@github.com:daniilmotsniy/HelpService.git

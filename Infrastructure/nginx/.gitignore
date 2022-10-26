@@ -1,0 +1,6 @@
+/nginx/build
+/.idea
+/data
+
+.env
+.env.prod
