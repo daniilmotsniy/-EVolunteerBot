@@ -20,8 +20,8 @@ git clone https://${var.token}@github.com/daniilmotsniy/HelpServiceFE.git
 chown -R HelpService:HelpService HelpService*/
 cd HelpServiceBE/
 echo -e "MONGODB_URL=mongodb+srv://bayraktar_kharkiv:mMjeONraiEnegzzf@cluster0.hpec3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" >> .env
-echo -e "AWS_ACCESS_KEY_ID=AKIAW6SXYBKUIHH5RIPR" >> .env
-echo -e "AWS_SECRET_ACCESS_KEY=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" >> .env
+echo -e "AWS_ACCESS_KEY_ID=<env>" >> .env
+echo -e "AWS_SECRET_ACCESS_KEY=<env>" >> .env
 echo -e "BUCKET=pdfkeeper" >> .env
 echo -e "AUTH_JWT_ALGORITHM=HS384" >> .env
 echo -e "AUTH_JWT_PRIVATE_KEY=XVDYtseRI3FWDxSGYl8qoVbHdL37zyjr" >> .env
@@ -30,9 +30,9 @@ echo -e "AUTH_PASSWORD_HASH_SALT=XVDYtseRI3FWDxSGYl8qoVbHdL37zyjr" >> .env
 echo -e "AUTH_PASSWORD_HASH_CYCLES=61" >> .env
 docker-compose up -d 
 cd ../HelpService/
-echo -e "MONGODB_URL=mongodb+srv://bayraktar_kharkiv:mMjeONraiEnegzzf@cluster0.hpec3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" >> .env
+echo -e "MONGODB_URL=<env>" >> .env
 echo -e "CITIES=Харків" >> .env
-echo -e "BOT_TOKEN=5284246257:AAGzBQ4R3sYLsy_2s12eiS1p5dF4IoUtiyg" >> .env
+echo -e "BOT_TOKEN=<env>" >> .env
 docker-compose up -d
 cd ../HelpServiceFE/
 docker build -t ui .
